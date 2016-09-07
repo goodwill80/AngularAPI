@@ -1,0 +1,20 @@
+
+<h3>{{ stringInterpolation }}</h3>
+<input type="text" [value]="stringInterpolation">
+<p [ngClass]="{redBorder: onTest()}">ngClass</p>
+<p [ngStyle]="{color: 'green'}">ngStyle</p>
+<h3>Event Binding</h3>
+{{result}}
+{{myName.spouse}}
+
+<button (click)="onClicked()">onClick event binding</button>
+
+<input type="text" [(ngModel)]="person.name">
+<input type="text" [(ngModel)]="person.name">
+
+<h1>{{ person.name }}<h1>
+
+<p >{{ person.name }}</p>
+
+<h4>{{ test }}</h4>
+<button (click)="test = 'Jonathan'">click to change</button>
